@@ -121,7 +121,7 @@ async def WM(event:GroupMessageEvent,bot:Bot):
             for i in Data1:
                 Data2= Data2+i
             for j in word_list:
-                Data = re.compile(j).search(re.compile('] "(.+)').search(Data2).group().replace(' ',''),re.I)
+                Data = re.compile(j,re.IGNORECASE).search(re.compile('] "(.+)').search(Data2).group().replace(' ',''))
                 print(Data2 ,'\n'+re.compile('] "(.+)').search(Data2).group().replace(' ',''),'\n',Data)
                 if Data != None:
                     await bot.delete_msg(message_id=event.message_id)
