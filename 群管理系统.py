@@ -83,7 +83,7 @@ async def jy(event:Event,Event:GroupMessageEvent,bot:Bot):
                     time_list[i] = int(time_list[i])
                 Relation = dict(zip(name_list,time_list))
                 print(name_list, '\n',time_list, '\n',primary_bata,'\n',Relation)
-                if not '你的QQ' in name_list:
+                if not '群主的QQ' in name_list:
                     msg = ''
                     msg1=''
                     name = []
