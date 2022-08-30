@@ -114,7 +114,7 @@ async def WM(event:GroupMessageEvent,bot:Bot):
             userID.append(str(library[i][0]))
         for i in range(len(userID)):
             userID[i] = str(userID[i])
-        if not  str(event.get_user_id) in userID:
+        if not  str(event.get_user_id()) in userID:
             print(userID, '\n' + str(event.get_user_id))
             Data1 = re.compile('.+|').findall(event.get_event_description())
             Data2 = ''
